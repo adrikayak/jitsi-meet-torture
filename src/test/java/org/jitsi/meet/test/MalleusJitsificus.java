@@ -175,7 +175,9 @@ public class MalleusJitsificus
         String maxDisruptedBridgesStr = System.getProperty(MAX_DISRUPTED_BRIDGES_PCT_PNAME);
         if (!"".equals(maxDisruptedBridgesStr))
         {
-            maxDisruptedBridges = Float.parseFloat(maxDisruptedBridgesStr);
+            //maxDisruptedBridges = Float.parseFloat(maxDisruptedBridgesStr);
+            maxDisruptedBridges = 0;
+
         }
 
         boolean useLoadTest = Boolean.parseBoolean(System.getProperty(USE_LOAD_TEST_PNAME));
